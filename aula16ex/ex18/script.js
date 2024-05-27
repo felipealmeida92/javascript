@@ -1,7 +1,6 @@
 
-let num = document.querySelector('input#txtn')
-let res = document.querySelector('select#exsel')
-let fim = document.getElementById('resultado')
+let num = document.querySelector('input#fnum')
+let res = document.querySelector('select#flista')
 function analisar(n=0) {
     if (num.value.length == 0 || num.value > 100) {
         alert('Valor inválido ou já encontrado na lista.')
@@ -14,5 +13,5 @@ function analisar(n=0) {
 }
 
 function finalisar() {
-    fim.innerHTML = `Adicionado`
+    
 }
