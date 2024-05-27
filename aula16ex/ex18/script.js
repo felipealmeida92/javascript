@@ -1,6 +1,8 @@
+
+let num = document.querySelector('input#txtn')
+let res = document.querySelector('select#exsel')
+let fim = document.getElementById('resultado')
 function analisar(n=0) {
-    let num = document.querySelector('input#txtn')
-    let res = document.querySelector('select#exsel')
     if (num.value.length == 0 || num.value > 100) {
         alert('Valor inválido ou já encontrado na lista.')
     } else {
@@ -9,6 +11,8 @@ function analisar(n=0) {
         item.text = `Valor ${n} adicionado`
         res.appendChild(item)
     }
-    
+}
 
+function finalisar() {
+    fim.innerHTML = `Adicionado`
 }
